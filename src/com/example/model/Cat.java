@@ -5,4 +5,8 @@ public class Cat extends  Animal{
     public void makeSound() {
         System.out.println ("Wowow");
     }
+
+    public Cat(int age) {
+        super ( age );
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.firsttest;
+package com.firsttest;
 
 import com.example.model.Animal;
 import com.example.model.Cat;
@@ -16,8 +16,10 @@ public class Main {
         animal.makeSound ();
     }
     public static void main(String[] args) {
-       Animal animal = new Cat();
-       Cat cat  = new Cat ();
+       Animal animal = new Cat(50);
+       Cat cat  = new Cat (55);
+       animal.setAge ( 60 );
+       System.out.println (animal);
 
        justMakingSound ( animal );
        justMakingSound2(cat);
